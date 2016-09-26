@@ -16,6 +16,10 @@ As this input example, you can find a longest common string is <font color="gray
 
 ## Algorithm
 ---
+#### Recursion Form
+
+You can see the form as below:
+<br/>
 ![LCS formula](../../img/LCS formula.png)
 
 ## Complexity
