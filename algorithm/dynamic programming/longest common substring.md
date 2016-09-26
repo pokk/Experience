@@ -16,6 +16,7 @@ As this input example, you can find a longest common string is <font color="gray
 
 ## Algorithm
 ---
+[![LCS formula](img/LCS formula.png)]
 
 ## Complexity
 ---
