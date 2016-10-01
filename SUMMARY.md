@@ -22,7 +22,6 @@
        * [Maximum Sum Rectangle in a 2D Matrix](algorithm/dynamic programming/maximum sum rectangle in a 2D matrix.md)
        * [Minimum Cost path](algorithm/dynamic programming/minimum cost path.md)
        * [Minimum Insertions to form a Palindrome](algorithm/dynamic programming/minimum insertions to form a palindrome.md)
-       * [Longest Common Substring](algorithm/dynamic programming/longest common substring.md)
        * [Optimal Binary Search Tree](algorithm/dynamic programming/optimal binary search tree.md)
        * [Optimal Strategy for a Game](algorithm/dynamic programming/optimal strategy for a game.md)
        * [Optimal Substructure Property](algorithm/dynamic programming/optimal substructure property.md)
