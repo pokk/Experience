@@ -28,13 +28,7 @@ The other way, we try to use __*dynamic programming*__.
 <br/>
 We can start considering a optimal substructure. Here are two strings X:_GOOD_, Y:_GOTO_, and Z is LCS(X, Y). We can find the same word from the tail of both of strings, we can know there are three conditions will be happened.
 1. if __Xt = Yt__ then __Zt <- the tail of the same word__.
-2. if __Xt != Yt__ then __Zt <- __.
-
-## Solution
----
-
-## Implementation
----
+2. if __Xt != Yt__ then __Zt <- the__.
 
 ## Algorithm
 ---
@@ -44,13 +38,15 @@ You can see the form as below:
 <br/>
 ![LCS formula](../../img/LCS formula.png)
 
+## Solution
+---
+
 ## Complexity
 ---
 Time Complexity: __Big-O(mn)__
 <br/>
 Space Complexity: __Big-O(mn)__
 
-## Source
+## Source Code
 ---
-```python
-```
+URL
