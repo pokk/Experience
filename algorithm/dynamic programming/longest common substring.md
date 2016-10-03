@@ -153,15 +153,15 @@ the max length result: __4__
 <br>
 We can use backtracking to find the string we recorded.
 
-|   |   | <font color="yellow">A</font> | B | <font color="yellow">C</font> | <font color="yellow">D</font> | <font color="yellow">F</font> |
+|   |   | <font color="blue">A</font> | B | <font color="blue">C</font> | <font color="blue">D</font> | <font color="blue">F</font> |
 |:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
-| <font color="yellow">A</font> | 0 | <font color="yellow">1 ↘</font> | <font color="yellow">1 →</font> | 1 → | 1 → | 1 → |
-| <font color="yellow">C</font> | 0 | 1 ↓ | 1 → | <font color="yellow">2 ↘</font> | 2 → | 2 → |
-| <font color="yellow">D</font> | 0 | 1 ↓ | 1 → | 2 → | <font color="yellow">3 ↘</font> | 3 → |
-| C | 0 | 1 ↓ | 1 → | 2 ↘ | <font color="yellow">3 ↓</font> | 3 → |
-| <font color="yellow">F</font> | 0 | 1 ↓ | 1 → | 2 → | 3 ↓ | <font color="yellow">4 ↘</font> |
-| D | 0 | 1 ↓ | 1 → | 2 ↓ | 3 ↘ | <font color="yellow">4 ↓</font> |
+| <font color="blue">A</font> | 0 | <font color="blue">1 ↘</font> | <font color="blue">1 →</font> | 1 → | 1 → | 1 → |
+| <font color="blue">C</font> | 0 | 1 ↓ | 1 → | <font color="blue">2 ↘</font> | 2 → | 2 → |
+| <font color="blue">D</font> | 0 | 1 ↓ | 1 → | 2 → | <font color="blue">3 ↘</font> | 3 → |
+| C | 0 | 1 ↓ | 1 → | 2 ↘ | <font color="blue">3 ↓</font> | 3 → |
+| <font color="blue">F</font> | 0 | 1 ↓ | 1 → | 2 → | 3 ↓ | <font color="blue">4 ↘</font> |
+| D | 0 | 1 ↓ | 1 → | 2 ↓ | 3 ↘ | <font color="blue">4 ↓</font> |
 
 the max string result: __ACDF__
 
