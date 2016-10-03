@@ -150,7 +150,7 @@ final:
 
 So,
 the max length result: __4__
-<br>
+
 We can use backtracking to find the string we recorded.
 
 |   |   | <font color="blue">A</font> | B | <font color="blue">C</font> | <font color="blue">D</font> | <font color="blue">F</font> |
