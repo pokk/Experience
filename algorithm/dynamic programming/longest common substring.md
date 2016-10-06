@@ -128,7 +128,7 @@ step 10:
 |:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | A | 0 | 1 ↘ | 1 → | 1 → | 1 → | 1 → |
-| <font color="red">C</font> | 0 | 1 ↓ | 1 ↓ | 2 ↘ | <font color="red">2 →</font> | 0 |
+| <font color="red">C</font> | 0 | 1 ↓ | 1 ↓ | 2 ↘ | <font color="green">2 →</font> | 0 |
 | D | 0 | 0 | 0 | 0 | 0 | 0 |
 | C | 0 | 0 | 0 | 0 | 0 | 0 |
 | F | 0 | 0 | 0 | 0 | 0 | 0 |
