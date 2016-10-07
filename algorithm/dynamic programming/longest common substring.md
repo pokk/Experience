@@ -48,7 +48,7 @@ String B: ACDCFD
 step 1: Initialize
 
 |   |   | A | B | C | D | F |
-|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | A | 0 | 0 | 0 | 0 | 0 | 0 |
 | C | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -61,7 +61,7 @@ step 1: Initialize
 step 2:
 
 |   |   | <font color="red">A</font> | B | C | D | F |
-|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | <font color="red">A</font> | 0 | <font color="red">1 ↘</font> | 0 | 0 | 0 | 0 |
 | C | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -73,7 +73,7 @@ step 2:
 step 3:
 
 |   |   | A | <font color="red">B</font> | C | D | F |
-|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | <font color="red">A</font> | 0 | 1 | <font color="green">1 →</font> | 0 | 0 | 0 |
 | C | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -85,7 +85,7 @@ step 3:
 step 4:
 
 |   |   | A | B | <font color="red">C</font> | D | F |
-|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | <font color="red">A</font> | 0 | 1 ↘ | 1 → | <font color="green">1 →</font> | 0 | 0 |
 | C | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -99,7 +99,7 @@ step 4:
 step 7:
 
 |   |   | <font color="red">A</font> | B | C | D | F |
-|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | A | 0 | 1 ↘ | 1 → | 1 → | 1 → | 1 → |
 | <font color="red">C</font> | 0 | <font color="green">1 ↓</font> | 0 | 0 | 0 | 0 |
@@ -113,7 +113,7 @@ step 7:
 step 9:
 
 |   |   | A | B | <font color="red">C</font> | D | F |
-|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | A | 0 | 1 ↘ | 1 → | 1 → | 1 → | 1 → |
 | <font color="red">C</font> | 0 | 1 ↓ | 1 ↓ | <font color="red">2 ↘</font> | 0 | 0 |
@@ -125,7 +125,7 @@ step 9:
 step 10:
 
 |   |   | A | B | <font color="red">C</font> | D | F |
-|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | A | 0 | 1 ↘ | 1 → | 1 → | 1 → | 1 → |
 | <font color="red">C</font> | 0 | 1 ↓ | 1 ↓ | 2 ↘ | <font color="green">2 →</font> | 0 |
@@ -139,7 +139,7 @@ step 10:
 final:
 
 |   |   | A | B | C | D | <font color="red">F</font> |
-|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | A | 0 | 1 ↘ | 1 → | 1 → | 1 → | 1 → |
 | C | 0 | 1 ↓ | 1 → | 2 ↘ | 2 → | 2 → |
@@ -148,8 +148,7 @@ final:
 | F | 0 | 1 ↓ | 1 → | 2 → | 3 ↓ | 4 ↘ |
 | <font color="red">D</font> | 0 | 1 ↓ | 1 → | 2 ↓ | 3 ↘ | <font color="pink">4 ↓</font> |
 
-So,
-the max length result: __4__
+So, the max length result: __4__
 
 We can use backtracking to find the string we recorded.
 
