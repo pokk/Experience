@@ -2,14 +2,56 @@
 
 ## Problem
 ---
+Given a sequence of matrices, the goal is to find the most efficient way to multiply these matrices. The problem is not actually to _perform_ the multiplications, but merely to decide the sequence of the matrix multiplications involved.
+
+For example, a sequence of matrices is A1 x A2 x A3,
+<br>
+A1: 10 x 100
+<br>
+A2: 100 x 5
+<br>
+A3: 5 x 50
+
+1. ((A1 x A2) x A3): (10 x 100 x 5) + (10 x 5 x 50) = 7500
+<br>
+2. (A1 x (A2 x A3)): (100 x 5 x 50) + (10 x 100 x 50) = 75000
+<br>
+
+If we choose the second one, the multiplications will be huge difference from the first. The best choice is the first.
 
 ## Thought
 ---
+We have a thinking is using __*brute-force attack*__ to solve it.
+<br>
+If there are a sequence of n matrices, then we can find __C(n-1) = 1/n x (2n - 1)C(n - 1)__ ways of the multiplications.
+<br>
+This is no a way to solve this problem. :(
+
+<br>
+The other way, we try to use __*dynamic programming*__.
+If P is a way of the less multiplications of Ai x Ai+1 x ... x Aj. Then we can find P1 and P2 are the most efficient way, which are p1 is A1 x ... x Ak and p2 is Ak+1 x ... x Aj.
+<br>
+The result => P = (A1 x ... x Ak) x (Ak+1 x ... x Aj).
 
 ## Algorithm
 ---
 #### Recursion Form
 ![Matrix Chain Multiplication](../../img/MCM formula.png)
+
+#### Concept
+A1 x A2 x A3 x A4 x A5
+<br>
+L = 1, 2, 3, 4, 5
+<br>
+L = 1 => A1, A2, A3, A4, A5
+<br>
+L = 2 => A1 x A2, A2 x A3, A3 x A4, A4 x A5
+<br>
+L = 3 => A1 x A2 x A3, A2 x A3 x A4, A3 x A4 x A5
+<br>
+L = 4 => A1 x A2 x A3 x A4, A2 x A3 x A4 x A5
+<br>
+L = 5 => A1 x A2 x A3 x A4 x A5
 
 ## Solution
 ---
@@ -60,6 +102,8 @@ step 3:
 Current __k = 2__.
 <br>
 We gonna find __m[1, 2]__: A1 x A2
+<br>
+So, here we go.
 
 ```
 k = 1 -> (A1 x A2) = 4 x 3 x 2 = 24
