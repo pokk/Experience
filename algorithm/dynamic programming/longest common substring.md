@@ -153,7 +153,7 @@ So, the max length result: __4__
 We can use backtracking to find the string we recorded.
 
 |   |   | <font color="blue">A</font> | B | <font color="blue">C</font> | <font color="blue">D</font> | <font color="blue">F</font> |
-|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |   | 0 | 0 | 0 | 0 | 0 | 0 |
 | <font color="blue">A</font> | 0 | <font color="blue">1 ↘</font> | <font color="blue">1 →</font> | 1 → | 1 → | 1 → |
 | <font color="blue">C</font> | 0 | 1 ↓ | 1 → | <font color="blue">2 ↘</font> | 2 → | 2 → |
