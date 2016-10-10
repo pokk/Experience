@@ -207,6 +207,35 @@ step final:
 
 So, the max length result: __92__
 
+#### Backtracking
+
+We need to keep some steps from __K__ of the minimum. __*m[n, n]*__ this case, we can just skip it because it's finished.
+<br>
+For this example,
+<br><br>
+m[1, 5] => k = 1
+<br>
+__(__ A1 x __(__ A2 x A3 x A4 x A5 __)__ __)__
+<br><br>
+Backtracking to m[1, 1] and m[2, 5].
+<br>
+m[2, 5] => k = 2
+<br>
+( A1 x (A2 x __(__ A3 x A4 x A5 __)__ ) )
+<br><br>
+Backtracking to m[2, 2] and m[3, 5].
+<br>
+m[3, 5] => k = 4
+<br>
+( A1 x ( A2 x ( __(__ A3 x A4 __)__ x A5 ) ) )
+<br><br>
+Backtracking to m[3, 4] and m[5, 5].
+<br>
+m[3, 4] => k = 3
+<br>
+Backtracking to m[3, 3] and m[4, 4]. We done this case.
+
+
 ## Complexity
 ---
 Time Complexity: __Big-O(n^3)__
