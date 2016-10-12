@@ -2,9 +2,44 @@
 
 ## Problem
 ---
+Given __n__ items and each of item has __w__ weight and __v__ value and you have a backpack. The question is take the most valuable thins to your backpack as possible as your backpack can contain them.
+<br>
+BTW, you must take __a__ whole thing, those of them couldn't separated.
 
 ## Thought
 ---
+
+The simplest thinking is __greedy__ algorithm. That we could calculate the value of a unit of each things. Then we put them in my backpack by sequence.
+
+Backpack can contain __w__ = 5 Kg.
+```
+items   value   weight
+1       6       1
+2       10      2
+3       12      3
+```
+
+item<sub>1</sub> => v<sub>1</sub> / w<sub>1</sub> = 6
+<br>
+item<sub>2</sub> => v<sub>2</sub> / w<sub>2</sub> = 5
+<br>
+item<sub>3</sub> => v<sub>3</sub> / w<sub>3</sub> = 4
+
+We get items' order is item<sub>1</sub> > item<sub>2</sub> > item<sub>3</sub>.
+<br>
+1. Pick item<sub>1</sub> first to the backpack. Remain 4 Kg, Value is 6.
+2. Then pick item<sub>2</sub> to the backpack. Remain 2 Kg, Value is 16.
+3. The backpack couldn't contain anymore.
+
+But actually, that's not the best way to pick.
+
+We use __dynamic programming__ algorithm to get the best way.
+<br>
+The best way is item x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>k</sub> and x<sub>1</sub> < x<sub>2</sub> < ... < x<sub>k</sub>, then
+<br>
+1. if x<sub>k</sub> ≠ n, then item 1 ~ n-1 will be in  x<sub>1</sub> ~ x<sub>k</sub> and total weight is under W, and this is the best solution.
+2. if x<sub>k</sub> = n, then item 1 ~ n-1 will be in  x<sub>1</sub> ~ x<sub>k</sub> and total weight is under W - w<sub>n</sub>, and this is the best solution.
+
 
 ## Algorithm
 ---
