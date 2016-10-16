@@ -36,7 +36,6 @@ We can start considering a optimal substructure. Here are two strings X:_GOOD_, 
 
 You can see the form as below:
 <br>
-<img src="../../img/LCS formula.png" alt="LCS formula" style="center">
 ![LCS formula](../../img/LCS formula.png)
 
 ## Solution
@@ -48,15 +47,15 @@ String B: ACDCFD
 
 step 1: Initialize
 
-   |   | A | B | C | D | F
-:-:|:-:|:-:|:-:|:-:|:-:|:-:
-   | 0 | 0 | 0 | 0 | 0 | 0
- A | 0 | 0 | 0 | 0 | 0 | 0
- C | 0 | 0 | 0 | 0 | 0 | 0
- D | 0 | 0 | 0 | 0 | 0 | 0
- C | 0 | 0 | 0 | 0 | 0 | 0
- F | 0 | 0 | 0 | 0 | 0 | 0
- D | 0 | 0 | 0 | 0 | 0 | 0
+|   |   | A | B | C | D | F |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|   | 0 | 0 | 0 | 0 | 0 | 0 |
+| A | 0 | 0 | 0 | 0 | 0 | 0 |
+| C | 0 | 0 | 0 | 0 | 0 | 0 |
+| D | 0 | 0 | 0 | 0 | 0 | 0 |
+| C | 0 | 0 | 0 | 0 | 0 | 0 |
+| F | 0 | 0 | 0 | 0 | 0 | 0 |
+| D | 0 | 0 | 0 | 0 | 0 | 0 |
 
 
 step 2:
