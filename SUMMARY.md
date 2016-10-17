@@ -2,7 +2,7 @@
 
 * [Algorithm](algorithm/README.md)
    * [Dynamic Programming](algorithm/dynamic programming/README.md)
-       <!-- * [0-1 Knapsack Problem](algorithm/dynamic programming/0-1 knapsack problem.md)
+       * [0-1 Knapsack Problem](algorithm/dynamic programming/0-1 knapsack problem.md)
        * [Bellman–Ford Algorithm](algorithm/dynamic programming/bellman–ford algorithm.md)
        * [Binomial Coefficient](algorithm/dynamic programming/binomial coefficient.md)
        * [Box Stacking Problem](algorithm/dynamic programming/box stacking problem.md)
@@ -10,7 +10,7 @@
        * [Cutting A Rod](algorithm/dynamic programming/cutting a rod.md)
        * [Dice Throw](algorithm/dynamic programming/dice throw.md)
        * [Edit Distance](algorithm/dynamic programming/edit distance.md)
-       * [Egg Dropping Puzzle](algorithm/dynamic programming/egg dropping puzzle.md) -->
+       * [Egg Dropping Puzzle](algorithm/dynamic programming/egg dropping puzzle.md)
        * [Floyd-Warshall Algorithm](algorithm/dynamic programming/floyd warshall algorithm.md)
        * [Longest Bitonic Subsequence](algorithm/dynamic programming/longest bitonic subsequence.md)
        * [Longest Common Substring](algorithm/dynamic programming/longest common substring.md)
