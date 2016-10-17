@@ -238,9 +238,9 @@ Backtracking to m[3, 3] and m[4, 4]. We done this case.
 
 ## Complexity
 ---
-Time Complexity: __Big-O(n^3)__
+Time Complexity: __Big-O(n<sup>3</sup>)__
 <br>
-Space Complexity: __Big-O(n^2)__
+Space Complexity: __Big-O(n<sup>2</sup>)__
 
 ## Source Code
 ---
