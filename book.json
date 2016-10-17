@@ -1,5 +1,5 @@
 {
-  "plugins": ["disqus", "expandable-chapters"],
+  "plugins": ["disqus", "expandable-chapters", "multipart", "toggle-chapters"],
   "pluginsConfig": {
     "expandable-chapters":{},
     "disqus": {
