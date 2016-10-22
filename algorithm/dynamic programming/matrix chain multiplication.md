@@ -68,7 +68,7 @@ A4: 5x4
 A5: 4x2
 <br>
 
-step 1: Initialize
+##### step 1: Initialize
 
 |   | 0 | 1 | 2 | 3 | 4 | 5 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -84,7 +84,7 @@ First, we fill up all __*i = j*__.
 <br>
 The matrix will be as below:
 
-step 2:
+##### step 2:
 
 All of the __k = 1__ case.
 
@@ -97,7 +97,7 @@ All of the __k = 1__ case.
 | 4 | <font color="gray">0</font> | 0 | 0 | 0 | <font color="red">0</font> | 0 |
 | 5 | <font color="gray">0</font> | 0 | 0 | 0 | 0 | <font color="red">0</font> |
 
-step 3:
+##### step 3:
 
 Current __k = 2__.
 <br>
@@ -120,7 +120,7 @@ Here is only a case so minimum is __24__, we filled the m[1, 2] = 24.
 | 4 | <font color="gray">0</font> | 0 | 0 | 0 | 0 | 0 |
 | 5 | <font color="gray">0</font> | 0 | 0 | 0 | 0 | 0 |
 
-step 4:
+##### step 4:
 
 Current __k = 2__.
 <br>
@@ -141,9 +141,9 @@ Here is only a case so minimum is __30__, too. We filled the m[1, 2] = 30.
 | 4 | <font color="gray">0</font> | 0 | 0 | 0 | 0 | 0 |
 | 5 | <font color="gray">0</font> | 0 | 0 | 0 | 0 | 0 |
 
-...5...6...7...
+##### ...5...6...7...
 
-step 8:
+##### step 8:
 
 Current __k = 3__.
 <br>
@@ -167,9 +167,9 @@ m[1, 3] will be __64__.
 | 4 | <font color="gray">0</font> | 0 | 0 | 0 | 0 | 40 |
 | 5 | <font color="gray">0</font> | 0 | 0 | 0 | 0 | 0 |
 
-...9...10...11...
+##### ...9...10...11...
 
-step 12:
+##### step 12:
 
 Current __k = 4__.
 <br>
@@ -194,7 +194,7 @@ m[2, 5] will be __68__.
 | 4 | <font color="gray">0</font> | 0 | 0 | 0 | 0 | 40 |
 | 5 | <font color="gray">0</font> | 0 | 0 | 0 | 0 | 0 |
 
-step final:
+##### step final:
 
 |   | 0 | 1 | 2 | 3 | 4 | 5 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|

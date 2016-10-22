@@ -1,6 +1,7 @@
 {
-  "plugins": ["disqus"],
+  "plugins": ["disqus", "expandable-chapters", "multipart", "toggle-chapters"],
   "pluginsConfig": {
+    "expandable-chapters":{},
     "disqus": {
       "shortName": "Your Suggestion"
     }
