@@ -8,7 +8,6 @@ BTW, you must take __a__ whole thing, those of them couldn't separated.
 
 ## Thought
 ---
-
 The simplest thinking is __greedy__ algorithm. That we could calculate the value of a unit of each things. Then we put them in my backpack by sequence.
 
 Backpack can contain __w__ = 5 Kg.
