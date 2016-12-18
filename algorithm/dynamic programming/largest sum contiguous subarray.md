@@ -1,10 +1,12 @@
 # Largest Sum Contiguous Subarray
 
 ## Problem
-A given array, no sorting, has negative numbers. Find the sum of contiguous subarray within a one-dimensional array of numbers which has the largest sum.
+A given array, no sorting, has negative numbers. Find the sum of contiguous subarray within a one-dimensional
+array of numbers which has the largest sum.
 
 ## Thought
-Scanning each number in array, and get the sum with this number and so far sum. If the so far sum is negative, then the next number will be the first number of new subarray, if the so far sum is positive, then track the next number.
+Scanning each number in array, and get the sum with this number and so far sum. If the so far sum is negative,
+then the next number will be the first number of new subarray, if the so far sum is positive, then track the next number.
 
 ## Algorithm
 <pre><code>
