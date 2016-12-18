@@ -1,7 +1,9 @@
 # Matrix Chain Multiplication
 
 ## Problem
+
 ---
+
 Given a sequence of matrices, the goal is to find the most efficient way to multiply these matrices. The problem is not actually to _perform_ the multiplications, but merely to decide the sequence of the matrix multiplications involved.
 
 For example, a sequence of matrices is A1 x A2 x A3,
@@ -13,6 +15,7 @@ A2: 100 x 5
 A3: 5 x 50
 
 1. ((A1 x A2) x A3): (10 x 100 x 5) + (10 x 5 x 50) = 7500
+
 <br>
 2. (A1 x (A2 x A3)): (100 x 5 x 50) + (10 x 100 x 50) = 75000
 <br>
@@ -20,7 +23,9 @@ A3: 5 x 50
 If we choose the second one, the multiplications will be huge difference from the first. The best choice is the first.
 
 ## Thought
+
 ---
+
 We have a thinking is using __*brute-force attack*__ to solve it.
 <br>
 If there are a sequence of n matrices, then we can find __C(n-1) = 1/n x (2n - 1)C(n - 1)__ ways of the multiplications.
@@ -34,11 +39,15 @@ If P is a way of the less multiplications of Ai x Ai+1 x ... x Aj. Then we can f
 The result => P = (A1 x ... x Ak) x (Ak+1 x ... x Aj).
 
 ## Algorithm
+
 ---
+
 #### Recursion Form
+
 ![Matrix Chain Multiplication](../../img/MCM formula.png)
 
 #### Concept
+
 A1 x A2 x A3 x A4 x A5
 <br>
 L = 1, 2, 3, 4, 5
@@ -54,7 +63,9 @@ L = 4 => A1 x A2 x A3 x A4, A2 x A3 x A4 x A5
 L = 5 => A1 x A2 x A3 x A4 x A5
 
 ## Solution
+
 ---
+
 Here is a matrix __A1 x A2 x A3 x A4 x A5__.
 <br>
 A1: 4x3
@@ -237,10 +248,14 @@ Backtracking to m[3, 3] and m[4, 4]. We done this case.
 
 
 ## Complexity
+
 ---
+
 Time Complexity: __Big-O(n<sup>3</sup>)__
 <br>
 Space Complexity: __Big-O(n<sup>2</sup>)__
 
 ## Source Code
+
 ---
+

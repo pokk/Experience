@@ -1,14 +1,23 @@
 # Largest Sum Contiguous Subarray
 
 ## Problem
+
+---
+
 A given array, no sorting, has negative numbers. Find the sum of contiguous subarray within a one-dimensional
 array of numbers which has the largest sum.
 
 ## Thought
+
+---
+
 Scanning each number in array, and get the sum with this number and so far sum. If the so far sum is negative,
 then the next number will be the first number of new subarray, if the so far sum is positive, then track the next number.
 
 ## Algorithm
+
+---
+
 <pre><code>
 if now sum > zero:
     now sum = zero
@@ -18,6 +27,9 @@ if maximum sum < now sum:
 </code></pre>
 
 ## Steps
+
+---
+
 [-2, -3, 4, -1, -2, 1, 5, -3]
 <br>begin: started number of subarray.
 <br>end: ended number of subarray.
@@ -69,12 +81,21 @@ if maximum sum < now sum:
     - maximum sum: 7
 
 ## Complexity
+
+---
+
 Time Complexity: __Big-O(n)__
 <br>
 Space Complexity: __Big-O(1)__
 
 ## Source code
+
+---
+
 https://github.com/pokk/algorithm/blob/master/weian/DynamicProgramming/largest_sum_contiguous_subarray.py
 
 ## Reference
+
+---
+
 http://www.geeksforgeeks.org/largest-sum-contiguous-subarray/

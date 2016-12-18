@@ -1,14 +1,18 @@
 # Longest Common Substring
 
 ## Problem
+
 ---
+
 Given two strings <font color="gray">__'ACBAD'__</font> and <font color="gray">__'ABAC'__</font> for the
 input. Your mission is finding a longest common string from this two strings.<br>
 As this input example, you can find a longest common string is <font color="gray">__'ABA'__</font> from them
 so the answer will be 3.
 
 ## Thought
+
 ---
+
 We have a thinking is using __*brute-force attack*__ to solve it.
 <br>
 1. Show all of the X's substring.
@@ -35,7 +39,9 @@ happened.
 2. if __Xt != Yt__ then __Zt <- the__.
 
 ## Algorithm
+
 ---
+
 #### Recursion Form
 
 You can see the form as below:
@@ -43,7 +49,9 @@ You can see the form as below:
 ![LCS formula](../../img/LCS formula.png)
 
 ## Solution
+
 ---
+
 String A: ABCDF
 <br>
 String B: ACDCFD
@@ -171,11 +179,15 @@ We can use backtracking to find the string we recorded.
 the max string result: __ACDF__
 
 ## Complexity
+
 ---
+
 Time Complexity: __Big-O(mn)__
 <br>
 Space Complexity: __Big-O(mn)__
 
 ## Source Code
+
 ---
+
 URL

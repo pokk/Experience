@@ -1,4 +1,4 @@
-#%20Summary
+# Summary
 
 - [Algorithm](algorithm/README.md)
     - [Dynamic Programming](algorithm/dynamic%20programming/README.md)

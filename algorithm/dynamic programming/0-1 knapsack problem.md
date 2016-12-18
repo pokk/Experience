@@ -1,18 +1,23 @@
 # 0-1 Knapsack Problem
 
 ## Problem
+
 ---
+
 Given __n__ items and each of item has __w__ weight and __v__ value and you have a backpack. The question is
 take the most valuable thins to your backpack as possible as your backpack can contain them.
 <br>
 BTW, you must take __a__ whole thing, those of them couldn't separated.
 
 ## Thought
+
 ---
+
 The simplest thinking is __greedy__ algorithm. That we could calculate the value of a unit of each things.
 Then we put them in my backpack by sequence.
 
 Backpack can contain __w__ = 5 Kg.
+
 ```
 items   value   weight
 1       6       1
@@ -46,14 +51,20 @@ W - w<sub>n</sub>, and this is the best solution.
 
 
 ## Algorithm
+
 ---
+
 #### Recursion Form
+
 ![0-1 Knapsack Problem](../../img/01KP formula.png)
 
 ## Solution
+
 ---
+
 A scenario is that a backpack weight limitation is __5__, and there are three items as below:
 <br>
+
 ```
 items   value   weight
 1       6       1
@@ -144,12 +155,15 @@ The row items mean __weight__, the col items mean __item__.
 | 3 | 0 | 6 | 10 | 16 | 18 | <font color="red">22</font> |
 
 
-
 ## Complexity
+
 ---
+
 Time Complexity: __Big-O(nw)__
 <br>
 Space Complexity: __Big-O(nw)__
 
 ## Source Code
+
 ---
+
